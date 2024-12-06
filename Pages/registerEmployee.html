@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Employee</title>
+    <link rel="stylesheet" href="../Assets/Style/style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="../Assets/Images/logo.png" alt="Rapidken">
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="Search employees here">
+            </div>
+        </div>
+        <nav>
+            <div id="hamburger">&#9776;</div>
+            <ul id="menu">
+                <li><a href="../Pages/registerEmployee.html">Employee Registration</a></li>
+                <li><a href="../Pages/employeesList.html">Employee Listing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="registration-container">
+            <h1>Register Employee</h1>
+            <form id="form">
+                <label for="name">Name:<span class="required">*</span></label>
+                <input type="text" id="name" required>
+    
+                <label for="position">Position:<span class="required">*</span></label>
+                <input type="text" id="position" required>
+    
+                <label for="about">About:<span class="required">*</span></label>
+                <textarea id="about" required></textarea>
+    
+                <label for="joining_date">Joining Date:<span class="required">*</span></label>
+                <input type="date" id="joining_date" required>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Submitted by Nadimpalli Suryakala</p>
+    </footer>
+    <script src="../JavaScript/common.js"></script>
+    <script src="../JavaScript/employeeRegister.js"></script>
+</body>
+</html>
